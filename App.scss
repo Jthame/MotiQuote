@@ -1,0 +1,589 @@
+
+* {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Asap', sans-serif;
+  color: rgb(71, 71, 199);
+}
+
+
+// Purple & Light Blue ----------------------------------------------------------------//
+
+
+$light-blue: rgb(54, 176, 236);
+
+$active-light-blue:  rgb(54, 104, 220);
+
+.container-pb {
+  position: relative;
+  height: 780px; 
+  width: 100%;
+  // background: url("https://globalgrasshopper.com/wp-content/uploads/2012/06/Top-10-most-beautiful-skylines-in-the-world.jpg") no-repeat;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/bg-purple-blue.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    // opacity: 0.2;
+    animation: bg-fade 2s ease-in-out;
+  }
+}
+
+
+#quote-box {
+  /* height: 30rem; */
+  position: relative;
+  width: 30rem;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 8px 40px rgb(73, 100, 117); 
+  overflow: hidden;
+}
+
+#text-pb {
+  height: 70%; 
+  width: 96%; 
+  margin: 40px 0px 20px 0px;
+  font-size: 26px;
+  font-style: italic;
+  color:  $light-blue;
+  text-align: center;
+  align-self: center;
+  word-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /* background: red; */
+  animation: text-fade 1.1s ease-in;  
+}
+
+#author-pb {
+  font-size: 20px;
+  margin-left: 50%; 
+  margin-bottom: 30px;
+  word-wrap: wrap;
+  color:  $light-blue;
+}
+
+.options {
+  width: 100%;
+  height: 40px;
+  /* background-color: red;  */
+  margin-bottom: 40px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-pb {
+  height: 2rem; 
+  width: 2rem;
+  margin-right: 2%;
+  border-radius: 5px;
+  background: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-pb:active {
+  background: $active-light-blue;
+}
+
+.tweet-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#share-quote-pb {
+  height: 2rem; 
+  width: 2rem;
+  background: $light-blue;
+  margin-right: 51%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share-quote-pb:active {
+  background: $active-light-blue;
+}
+
+.share-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#new-quote-pb {
+  height: 2rem;
+  width: 7rem; 
+  font-size: 15px;
+  color: white; 
+  border-width: 0px;
+  border-radius: 7px;
+  background: $light-blue;
+}
+
+#new-quote-pb:active{
+  background: $active-light-blue;
+}
+
+
+
+
+
+// Green & Purple ----------------------------------------------------------------//
+
+$light-green:  rgb(29, 238, 137);
+
+$active-light-green:  rgb(26, 184, 108);
+
+
+
+.container-gp {
+  height: 780px; 
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/bg-green-purple.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bg-fade 2s ease-in-out;
+  }
+}
+
+#quote-box {
+  /* height: 30rem; */
+  width: 30rem;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 8px 40px rgb(73, 100, 117); 
+  overflow: hidden;
+}
+
+#text-gp {
+  height: 70%; 
+  width: 96%; 
+  margin: 40px 0px 20px 0px;
+  font-size: 26px;
+  font-style: italic;
+  color:  $light-green;
+  text-align: center;
+  align-self: center;
+  word-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /* background: red; */
+  animation: text-fade 1.1s ease-in-out;  
+}
+
+#author-gp {
+  font-size: 20px;
+  margin-left: 50%; 
+  margin-bottom: 30px;
+  word-wrap: wrap;
+  color:  $light-green;
+}
+
+.options {
+  width: 100%;
+  height: 40px;
+  /* background-color: red;  */
+  margin-bottom: 40px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-gp {
+  height: 2rem; 
+  width: 2rem;
+  margin-right: 2%;
+  border-radius: 5px;
+  background: $light-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-gp:active {
+  background: $active-light-green;
+}
+
+.tweet-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#share-quote-gp {
+  height: 2rem; 
+  width: 2rem;
+  background: $light-green;
+  margin-right: 51%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share-quote-gp:active {
+  background: $active-light-green;
+}
+
+.share-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#new-quote-gp {
+  height: 2rem;
+  width: 7rem; 
+  font-size: 15px;
+  color: white; 
+  border-width: 0px;
+  border-radius: 7px;
+  background: $light-green;
+}
+
+#new-quote-gp:active{
+  background: $active-light-green;
+}
+
+
+
+
+
+// Orange & Purple ----------------------------------------------------------------//
+
+
+$orange:  rgb(220, 132, 17);
+
+$active-orange:  rgb(145, 81, 22);
+
+
+
+.container-op {
+  height: 780px; 
+  width: 100%;
+  // background: url("https://globalgrasshopper.com/wp-content/uploads/2012/06/Top-10-most-beautiful-skylines-in-the-world.jpg") no-repeat;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/bg-orange-purple.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bg-fade 2s ease-in-out;
+  }
+}
+
+#quote-box {
+  /* height: 30rem; */
+  width: 30rem;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 8px 40px rgb(73, 100, 117); 
+  overflow: hidden;
+}
+
+#text-op {
+  height: 70%; 
+  width: 96%; 
+  margin: 40px 0px 20px 0px;
+  font-size: 26px;
+  font-style: italic;
+  color:  $orange;
+  text-align: center;
+  align-self: center;
+  word-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /* background: red; */
+  animation: text-fade 1.1s ease-in;  
+}
+
+#author-op {
+  font-size: 20px;
+  margin-left: 50%; 
+  margin-bottom: 30px;
+  word-wrap: wrap;
+  color:  $orange;
+}
+
+.options {
+  width: 100%;
+  height: 40px;
+  /* background-color: red;  */
+  margin-bottom: 40px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-op {
+  height: 2rem; 
+  width: 2rem;
+  margin-right: 2%;
+  border-radius: 5px;
+  background: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-op:active {
+  background: $active-orange;
+}
+
+.tweet-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#share-quote-op {
+  height: 2rem; 
+  width: 2rem;
+  background: $orange;
+  margin-right: 51%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share-quote-op:active {
+  background: $active-orange;
+}
+
+.share-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#new-quote-op {
+  height: 2rem;
+  width: 7rem; 
+  font-size: 15px;
+  color: white; 
+  border-width: 0px;
+  border-radius: 7px;
+  background: $orange;
+}
+
+#new-quote-op:active{
+  background: $active-orange;
+}
+
+
+
+
+
+// Sky Blue & Pink ----------------------------------------------------------------//
+
+
+
+$orange:  rgb(248, 118, 235);
+
+$active-orange:  rgb(181, 33, 178);
+
+
+
+.container-sbp {
+  height: 780px; 
+  width: 100%;
+  // background: url("https://globalgrasshopper.com/wp-content/uploads/2012/06/Top-10-most-beautiful-skylines-in-the-world.jpg") no-repeat;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    background: url("../images/bg-skyblue-pink.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: bg-fade 2s ease-in-out;
+  }
+}
+
+#quote-box {
+  /* height: 30rem; */
+  width: 30rem;
+  background: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 8px 40px rgb(73, 100, 117); 
+  overflow: hidden;
+}
+
+#text-sbp {
+  height: 70%; 
+  width: 96%; 
+  margin: 40px 0px 20px 0px;
+  font-size: 26px;
+  font-style: italic;
+  color:  $orange;
+  text-align: center;
+  align-self: center;
+  word-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  /* background: red; */
+  animation: text-fade 1.1s ease-in;  
+}
+
+#author-sbp {
+  font-size: 20px;
+  margin-left: 50%; 
+  margin-bottom: 30px;
+  word-wrap: wrap;
+  color:  $orange;
+}
+
+.options {
+  width: 100%;
+  height: 40px;
+  /* background-color: red;  */
+  margin-bottom: 40px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-sbp {
+  height: 2rem; 
+  width: 2rem;
+  margin-right: 2%;
+  border-radius: 5px;
+  background: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tweet-quote-sbp:active {
+  background: $active-orange;
+}
+
+.tweet-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#share-quote-sbp {
+  height: 2rem; 
+  width: 2rem;
+  background: $orange;
+  margin-right: 51%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#share-quote-sbp:active {
+  background: $active-orange;
+}
+
+.share-icon {
+  fill: rgb(255, 255, 255);
+  height: 1.1rem;
+}
+
+#new-quote-sbp {
+  height: 2rem;
+  width: 7rem; 
+  font-size: 15px;
+  color: white; 
+  border-width: 0px;
+  border-radius: 7px;
+  background: $orange;
+}
+
+#new-quote-sbp:active{
+  background: $active-orange;
+}
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes text-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes bg-fade {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
